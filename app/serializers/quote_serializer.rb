@@ -2,7 +2,7 @@
 
 # Quote Serializer
 class QuoteSerializer
-  include JSONAPI::Serializer
+  include Concerns::Serializable
 
   attributes :text
 

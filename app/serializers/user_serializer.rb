@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
-# Author Serializer
-class AuthorSerializer
+# User Serializer
+class UserSerializer
   include Concerns::Serializable
 
-  attributes :name
+  attributes :email
 end
-
