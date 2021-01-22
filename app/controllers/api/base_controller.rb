@@ -2,7 +2,7 @@
 
 module Api
   # Base Api Controller
-  class BaseController < ApplicationController
+  class BaseController < ActionController::Base
     include Knock::Authenticable
 
     def render_json(serializer_instance)
