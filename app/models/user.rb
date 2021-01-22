@@ -7,4 +7,8 @@ class User < ApplicationRecord
   validates :email, presence: true,
                     uniqueness: true,
                     format: { with: VALID_EMAIL_REGEX }
+
+  validates :nick, presence: true,
+                   uniqueness: true,
+                   length: { in: 4..20 }
 end
