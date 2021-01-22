@@ -6,6 +6,7 @@ ruby '2.7.2'
 gem 'rails', '~> 5.2.4', '>= 5.2.4.4'
 gem 'puma', '~> 3.11'
 gem 'pg'
+gem 'kaminari'
 
 gem 'jsonapi.rb'
 gem 'sass-rails', '~> 5.0'
