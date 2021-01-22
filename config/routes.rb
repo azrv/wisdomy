@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  root to: 'quotes#index'
+  resources :authors
+  resources :quotes
   resources :users
 
   namespace :api do
