@@ -9,6 +9,7 @@ class User < ApplicationRecord
                     format: { with: VALID_EMAIL_REGEX }
 
   validates :nick, presence: true,
-                   uniqueness: true,
                    length: { in: 4..20 }
+
+  validates :password, length: { in: 4..20 }
 end
