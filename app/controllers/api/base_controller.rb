@@ -3,6 +3,9 @@
 module Api
   # Base Api Controller
   class BaseController < ActionController::Base
+    protect_from_forgery with: :null_session
+
+    include JSONAPI::Deserialization
     include Knock::Authenticable
 
     def render_json(serializer_instance)
